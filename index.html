@@ -1,12 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mac Monitor</title>
+    <title>Mac-book-pro</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    mac Book information details
+    <section class="grid grid-flow-col grid-cols-2">
+        <Section class="p-12">
+            <img src="images/mac.png" alt="">
+        </Section>
+
+        <!-- Description -->
+
+        <Section class="p-12">
+            <section>
+                <h1 class=" text-3xl font-medium ">Customixe your Blue 24-inch iMac with Apple M1 chip</h1>
+                <p class="mt-3 text-sm">
+                    Apple M1 chip (8 Core CPU and 7 Core GPU); 8GB RAM + 256GB SSD; 24" 4K Retina Display (4096 x 2304)
+                    P3; 1080p FaceTime HD camera Two Thunderbolt / USB 4 ports
+                    Two USB 3 ports Gigabit Ethernet Magic Keyboard with Touch ID
+                </p>
+            </section>
+
+            <!-- MEMORY BUTTON -->
+            <section>
+                <p class="font-bold mt-10">Memory</p>
+                <button id="btn-memory8gb"
+                    class="btn-config mt-2 mr-0\.5 bg-white hover:bg-gray-100 text-gray-800 text-sm py-1 px-2 border border-gray-400 rounded shadow">
+                    8GB
+                    Unified Memory
+                </button>
+                <button id="btn-memory16gb"
+                    class="btn-config mt-2 mr-0\.5 mr-2 bg-white hover:bg-gray-100 text-gray-800 text-sm py-1 px-2 border border-gray-400 rounded shadow">
+                    16GB Unified Memory
+                </button>
+            </section>
+
+            <!-- STORAGE BUTTON -->
+            <section>
+                <p class=" font-bold mt-10">Storage</p>
+                <button id="btn-storage256gb"
+                    class="btn-config mt-2 mr-0\.5 bg-white hover:bg-gray-100 text-gray-800 text-sm py-1 px-2 border border-gray-400 rounded shadow">256GB
+                    SSD storage</button>
+                <button id="btn-storage512gb"
+                    class="btn-config mt-2 mr-0\.5 bg-white hover:bg-gray-100 text-gray-800 text-sm py-1 px-2 border border-gray-400 rounded shadow">512GB
+                    SSD storage</button>
+                <button id="btn-storage1tb"
+                    class="btn-config mt-2 mr-0\.5 bg-white hover:bg-gray-100 text-gray-800 text-sm py-1 px-2 border border-gray-400 rounded shadow">1TB
+                    SSD storage</button>
+            </section>
+
+            <!-- DELIVERY BUTTON -->
+            <section class="mb-10">
+                <p class=" font-bold mt-10">Chose Your Delivery Option</p>
+                <button id="btn-deliveryFree"
+                    class="btn-config mt-2 mr-0\.5 bg-white hover:bg-gray-100 text-gray-800 text-sm py-1 px-2 border border-gray-400 rounded shadow">Friday,
+                    Aug 25 FREE Prime Delivery
+                </button>
+                <button id="btn-deliveryPaid"
+                    class="btn-config mt-2 mr-0\.5 bg-white hover:bg-gray-100 text-gray-800 text-sm py-1 px-2 border border-gray-400 rounded shadow">Friday,
+                    Aug 21 Delivery Charge $20
+                </button>
+            </section>
+
+            <!-- BEST PRICE -->
+            <section class="grid grid-rows-4">
+                <section class="grid grid-cols-12 font-semibold">
+                    <div class="border-b-2 col-span-2">
+                        <p class="text-sm">Best Price</p>
+                    </div>
+                    <div class="border-b-2 text-left">
+                        <p class="text-sm pl-5">$<span id="price-best">1299</span></p>
+                    </div>
+                </section>
+
+                <!-- MEMORY COST -->
+                <section class="grid grid-cols-12 font-semibold">
+                    <div class="border-b-2 col-span-2">
+                        <p class="text-sm">Extra Memory Cost</p>
+                    </div>
+                    <div class="border-b-2 text-left">
+                        <p class="text-sm pl-5">$<span id="memory-cost">0</span></p>
+                    </div>
+                </section>
+
+                <!-- STORAGE COST -->
+                <section class="grid grid-cols-12 font-semibold">
+                    <div class="border-b-2 col-span-2">
+                        <p class="text-sm">Extra Storage Cost</p>
+                    </div>
+                    <div class="border-b-2 text-left">
+                        <p class="text-sm pl-5">$<span id="storage-cost">0</span></p>
+                    </div>
+                </section>
+
+                <!-- DELIVERY CHARGE -->
+                <section class="grid grid-cols-12 font-semibold">
+                    <div class="border-b-2 border-gray-800 col-span-2">
+                        <p class="text-sm">Delivery Charge</p>
+                    </div>
+                    <div class="border-b-2 border-gray-800 text-left">
+                        <p class="text-sm pl-5">$<span id="delivery-cost">0</span></p>
+                    </div>
+                </section>
+
+                <!-- TOTAL PRICE -->
+                <section class="grid grid-cols-12 font-semibold">
+                    <div class="border-b-2 col-span-2">
+                        <p class="text-sm">Total Price</p>
+                    </div>
+                    <div class="border-b-2 text-left">
+                        <p class="text-sm pl-5">$<span id="total-price">1299</span></p>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Promo Code -->
+            <p class="mt-10 font-bold">Add Promo Code</p>
+            <input id="input-field" class="border-2 hover:border-gray-600 rounded mt-1" type="text">
+            <button id="code" class=" bg-pink-600 text-white py-1 px-2 text-sm rounded ">Apply</button>
+        </section>
+    </Section>
+
+
+
+    <!-- TOTAL -->
+    <footer class="border-t-2 pt-8 pb-6">
+        <p class=" text-center text-3xl font-bold ">Total $<span id="total">1299</span></p>
+    </footer>
+
+
+    <script src="js/mac-book.js"></script>
 </body>
+
 </html>
